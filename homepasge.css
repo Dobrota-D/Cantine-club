@@ -1,9 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .navbar{
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(img/wood-591631_1920.jpg);
-      
+    background-image: url(img/boardwalk-1209265_1920.jpg    );
+    background-size: 110%;
+    
 }
 
 .logo{
@@ -12,20 +21,24 @@
 
 .links{
     font-family: 'Permanent Marker',sans-serif;
-
-}
-
-ul{
+    font-size: 20px;
     list-style: none;
     display: flex;
     justify-content: space-between ;
+    align-items: center;
 
 }
 
 li{
     display: flex;
     justify-content: space-between;
-    margin-left:50px;
-    padding-right: 10px;
+    align-items: center;
     float:left;
+}
+
+.links li a{
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+    color: white;
 }
