@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: rgb(102, 2, 2);
+  font-family: 'Permanent Marker',sans-serif;
+  font-size: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 20px 20px;
+}
+
+.adresses-texte {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700px;
+  color: #000000;
+}
+
+.adresses-header {
+  background: rgba(255, 255, 255, 0.7);
+  height: 110px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  
+}
+
+.page {
+  position: fixed;
+  top: 117px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.container { 
+  display: flex;
+  margin: 0px 0px;
+  height: 400px;
+  background: rgb(9, 21, 72);
+  align-items: center;
+}
+
+
+
+.container-map { 
+  display: flex;
+  margin: 0px 0px;
+  height: 400px;
+  background: rgb(199, 119, 0);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-map iframe {
+  margin-right: 8%;
+  height: 100%;
+  width: 42%;
+}
+
+.container p {
+  margin: 0px 200px;
+  position: relative;
+}
+
+.img {
+  margin-left: 8%;
+  height: 100%;
+  width: 42%;
+}
