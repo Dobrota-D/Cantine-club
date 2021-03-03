@@ -17,8 +17,6 @@ header{
     background-image: url(img/boardwalk-1209265_1920.jpg    );
     background-size: 110%;
     height: 117px;
-    
-    
 }
 
 .logo{
@@ -46,5 +44,14 @@ li{
     text-decoration: none;
     display: block;
     padding: 1.5rem;
-    color: white;
+    color: black;
 }
+
+.page {
+    position: fixed;
+    top: 117px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
