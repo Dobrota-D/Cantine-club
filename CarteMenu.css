@@ -1,0 +1,82 @@
+#ProduitEnVente{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#DescriptionProduit{
+    margin-top: 1.5rem;
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+#Produit{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+#ApercuProduit{
+    text-align: center;
+    margin-right: 3.5%;
+    margin-left: 3.5%;
+}
+
+#StreetFood{
+    color: rgb(186,32,32);
+    margin-left: 2%;
+}
+
+#CantocheVGé{
+    color: green;
+    margin-left: 2%;
+}
+
+#Nouveau{
+    color: rgb(10, 147, 250);
+    margin-left: 2%;
+}
+
+#NosDesserts{
+    color: rgb(240, 142, 0);
+    margin-left: 2%;
+}
+
+#marge{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 4px solid;
+    border-radius: 20px;
+}
+
+#DescriptionProduit{
+    
+    font-style: italic;
+}
+
+#PrixProduit{
+    font-size: 1.4rem;
+    margin-right: 1em;
+    margin-left: 1.5em;
+    text-align: left;
+}
+
+#NomProduit{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#ImageProduit{
+    max-width: 200px;
+}
+
+legend{
+    font-size: 1.20em;
+    text-align: left;
+    margin-left: 30px;
+    font-family: cursive;
+}
