@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="accueil.css" />
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Accueil</title>
@@ -36,6 +37,43 @@
         </video>
     </div>
 </body>
+<footer>
 
+    <div class="box" id="box">
+
+            <div class="footer"> 
+                
+                <div class="left">
+                        <div class="row">
+                                <div class="mail">
+                                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" width="100px" class="logo"></a>
+                                    <div class="contact"><p style="color:black">Nous contacter</p></div>
+                                    <div class="mentions" onclick="toMentions();"><p style="color:black">Mentions légales</p></div>
+                                </div>
+                                <div>
+                                <div class="row">
+                                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" height="60px" width="70px" class="logo reseau espace">
+
+                                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  height="60px" width="90px" class="reseau">
+
+                                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" height="60px" width="70px" class="reseau">
+                                </div>
+                                <div class="row tel">
+                                <img alt="téléphone" src="images/tel_icone.png" width="50px" height="50px" > 
+                                <div id="numTel"><p style="color:black">01 47 84 89 48</p></div>  
+                                </div>
+                        </div>   
+
+                                <div class="map">
+                                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" width="60px" height="60px" id="marqueur"> 
+                                        <div><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                                </div>
+                         </div>
+                </div>
+            </div>
+    </div>
+
+</footer>
+<script src="footer.js"></script> 
 
 </html>

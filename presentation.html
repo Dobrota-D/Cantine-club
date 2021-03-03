@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="presentation.css">
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Qui sommes nous ?</title>
 </head>
@@ -27,48 +28,84 @@
         </ul>
     </nav>
 </header>
+
 <body>
+    <h1>Qui sommes nous ?</h1>
     <div class="page">
-        <h1>Qui sommes nous ?</h1>
-        <div class="ligne_1">
-            <section>
-                <div class="lettres">
-                    <p>E</p>
-                    <p>T</p>
-                    <p>I</p>
-                    <p>L</p>
-                    <p>A</p>
-                    <p>U</p>
-                    <p>Q</p>
-                </div>
-            </section>
+    <div class="ligne_1">
+        <section>
+            <div class="lettres">
+                <p>E</p>
+                <p>T</p>
+                <p>I</p>
+                <p>L</p>
+                <p>A</p>
+                <p>U</p>
+                <p>Q</p>
+            </div>
+        </section>
 
-            <p>Cantine Club Les Vallées est un restaurant qui propose du street-food classique et végétale situé à Colombes,
-                dans les Hauts-de-Seine.
-                Il a vu le jour il y a quelques mois.</p>
-            <img src="img/facade2.jpg">
-        </div>
-
-        <div class="ligne_2">
-            <img src="img/facade2.jpg">
-            <p>Le Cantine Club veut mettre en avant l'idée de cantine et tout ce qu'il entoure : populaire et également
-                l'idée de club
-                pour de rencontres convivial.</p>
-        </div>
-
-        <div class="ligne_3">
-            <p>Les produits sont frais et fait maison.</p>
-            <img src="img/produit.jpg">
-        </div>
-
-        <div class="ligne_4">
-            <img src="img/produit.jpg">
-            <p>Une ambiance unique.</p>
-        </div>
+        <p>Cantine Club Les Vallées est un restaurant qui propose du street-food classique et végétale situé à Colombes,
+            dans les Hauts-de-Seine.
+            Il a vu le jour il y a quelques mois.</p>
+        <img src="img/facade2.jpg">
     </div>
-    
-    </footer>
+
+    <div class="ligne_2">
+        <img src="img/facade2.jpg">
+        <p>Le Cantine Club veut mettre en avant l'idée de cantine et tout ce qu'il entoure : populaire et également
+            l'idée de club
+            pour de rencontres convivial.</p>
+    </div>
+
+    <div class="ligne_3">
+        <p>Les produits sont frais et fait maison.</p>
+        <img src="img/produit.jpg">
+    </div>
+
+    <div class="ligne_4">
+        <img src="img/produit.jpg">
+        <p>Une ambiance unique.</p>
+    </div>
+</div>
 
 </body>
-    <script src="footer.js"></script>
+<footer>
+
+    <div class="box" id="box">
+
+            <div class="footer"> 
+                
+                <div class="left">
+                        <div class="row">
+                                <div class="mail">
+                                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" width="100px" class="logo"></a>
+                                    <div class="contact"><p style="color:black">Nous contacter</p></div>
+                                    <div class="mentions" onclick="toMentions();"><p style="color:black">Mentions légales</p></div>
+                                </div>
+                                <div>
+                                <div class="row">
+                                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" height="60px" width="70px" class="logo reseau espace">
+
+                                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  height="60px" width="90px" class="reseau">
+
+                                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" height="60px" width="70px" class="reseau">
+                                </div>
+                                <div class="row tel">
+                                <img alt="téléphone" src="images/tel_icone.png" width="50px" height="50px" > 
+                                <div id="numTel"><p style="color:black">01 47 84 89 48</p></div>  
+                                </div>
+                        </div>   
+
+                                <div class="map">
+                                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" width="60px" height="60px" id="marqueur"> 
+                                        <div><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                                </div>
+                         </div>
+                </div>
+            </div>
+    </div>
+
+</footer>
+<script src="footer.js"></script> 
 </html>
