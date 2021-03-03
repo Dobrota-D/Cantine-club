@@ -2,34 +2,26 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(220, 224, 228);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Exo', sans-serif;
+    margin-bottom: 0%;
+    position: absolute;
+    top:100%;
     border-radius: 10px 10px 10px 10px;
+    margin-top: 2%;
+    padding-bottom: 2.5%;
+    width: 100%;
 
-    background: rgb(112, 110, 110);
+    background: rgb(6, 104, 38);
     /* background: #25CC0F;
     background: -webkit-linear-gradient(to bottom right, #25CC0F 0%, #9E3212 73%);
     background: -moz-linear-gradient(to bottom right, #25CC0F 0%, #9E3212 73%);
     background: linear-gradient(to bottom right, #25CC0F 0%, #9E3212 73%); */
 
-    margin-top: 2%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 30px;
-    padding-bottom: 2.5%;
+
 } 
 
 .footer {
@@ -39,18 +31,20 @@ body{
     color: white;
     margin-top: 5%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .tel {
     display: flex;
     justify-content:flex-end;
-    margin-left: -45%;
+    margin-left: -65%;
     margin-top: 10%;
     width: 180%;
 }
 
 #numTel {
-margin-top: 4%;
 margin-left: 3%;
 }
 
@@ -59,14 +53,16 @@ margin-left: 3%;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: -6%;
-    margin-left: -1%;
+    margin-left: 15%;
+    max-width: 200%;
 }
 
 .mentions {
     text-decoration: underline black;
+    cursor: pointer;
     font-size: 12px;
-    margin-top: -4%;
-    margin-left: 5%;
+    margin-top: -1%;
+    margin-left: 17%;
 }
 
 .row {
@@ -75,8 +71,9 @@ margin-left: 3%;
 }
 
 .left {
+    display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    justify-content: flex-start;
 }
 
 .center {
@@ -92,16 +89,28 @@ margin-top: 10%;
 
 #marqueur {
     margin-left: 28%;
+    cursor: pointer;
 }
 
 .reseau {
-    margin-top: 1%;
+    margin-top: -10%;
+    cursor: pointer;
 }
 
 .map {
+    margin-top: -2%;
     margin-left: 21%;
 }
 
 .espace {
     margin-left: 40%;
+}
+
+.mail {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: -3%;
 }
