@@ -17,10 +17,11 @@ header{
 }
 
 .logo{
-
+    display: flex;
+    justify-content: center;
 }
 
-.links{
+.linksNav{
     font-family: 'Permanent Marker',sans-serif;
     font-size: 15px;
     list-style: none;
@@ -36,7 +37,7 @@ li{
     float:left;
 }
 
-.links li a{
+.linksNav li a{
     text-decoration: none;
     display: flex;
     padding: 1.5rem;
@@ -51,3 +52,4 @@ li{
     bottom: 0;
     overflow-y: scroll;
 }
+
