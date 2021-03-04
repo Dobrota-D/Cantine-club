@@ -7,11 +7,11 @@ body{
     padding: 0;
 }
 
-footer{
+/* footer{
     box-shadow: 0px 0px 20px black;
     position: relative;
     min-height: 100%;
-}
+} */
 
 .navbarFooter{
     display: flex;
@@ -19,6 +19,7 @@ footer{
     background-color: rgb(196, 194, 194);
     background-size: 100%;
     height: 117px;
+    margin-bottom: -10%;
 }
 
 .linksFooter{
@@ -46,7 +47,7 @@ li{
 }
 
 .left {
-    margin-left: -50%;
+    margin-left: 10%;
 }
 
 .row {
@@ -72,7 +73,7 @@ li{
 }
 
 .reseau {
-    margin-left: -25%;
+    margin-left: -15%;
 }
 
 .facebook {
@@ -100,7 +101,7 @@ li{
 }
 
 .appel {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 #numTel {
@@ -116,7 +117,7 @@ li{
 }
 
 .map {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 #coordonnees {
@@ -124,6 +125,16 @@ li{
 }
 
 .mentions {
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 1%;
+}
+
+#papier {
+    height: 50px;
+    width: 50px;
+    margin-left: 25%;
+}
+
+.logoFooter {
+    background-color: rgb(182, 188, 189);
 }
