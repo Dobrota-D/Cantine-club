@@ -1,7 +1,23 @@
-.accueilvideo {
+video {
     position: fixed; right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
     width: auto; height: auto; z-index: -100;
     
   }
 
+.textBox{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 100px;
+    margin-top: 40rem;
+}
+
+.pTextBox{
+font-size: 18px;
+}
+
+.h1TextBox{
+padding-bottom: 50px;
+font-family: "Permanent Marker", sans-serif;
+}

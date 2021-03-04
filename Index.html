@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="accueil.css" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Accueil</title>
@@ -16,10 +16,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
-
-            </div>
-            <ul class="links">
+            <ul class="linksNav">
                 <li class="Acceuil"><a href="#">Accueil</a></li>
                 <li class="Notre"><a href="CarteMenu.html">Notre Carte</a></li>
                 <li class="Presentation"><a href="presentation.html">Présentation</a></li>
@@ -27,53 +24,68 @@
                 <li class="Actualites"><a href="#">Actualités</a></li>
             </ul>
         </nav>
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
     </header>
-    <div class="">
-        <H1> </H1>
-    </div>
+
     <div>
         <video autoplay muted loop class="accueilvideo">
             <source src="video/videoaccueil.mp4">
         </video>
     </div>
-</body>
-<footer>
-
-    <div class="box" id="box">
-
-            <div class="footer"> 
-                
-                <div class="left">
-                        <div class="row">
-                                <div class="mail">
-                                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" width="100px" class="logo"></a>
-                                    <div class="contact"><p style="color:black">Nous contacter</p></div>
-                                    <div class="mentions" onclick="toMentions();"><p style="color:black">Mentions légales</p></div>
-                                </div>
-                                <div>
-                                <div class="row">
-                                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" height="60px" width="70px" class="logo reseau espace">
-
-                                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  height="60px" width="90px" class="reseau">
-
-                                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" height="60px" width="70px" class="reseau">
-                                </div>
-                                <div class="row tel">
-                                <img alt="téléphone" src="images/tel_icone.png" width="50px" height="50px" > 
-                                <div id="numTel"><p style="color:black">01 47 84 89 48</p></div>  
-                                </div>
-                        </div>   
-
-                                <div class="map">
-                                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" width="60px" height="60px" id="marqueur"> 
-                                        <div><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
-                                </div>
-                         </div>
-                </div>
-            </div>
+    <div class="textBox">
+        <div class="h1TextBox">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum labore ea quos dignissimos voluptas sunt inventore quidem, iste, voluptate, deserunt consectetur quas omnis facilis harum rem nihil earum aliquam natus.</h1>
+        </div>
+        <div class="pTextBox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde alias quidem deleniti obcaecati doloribus adipisci odit debitis in, natus vel similique quae nemo voluptate maxime eos sunt soluta quaerat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit illum omnis ea cum consequuntur cumque sunt officia numquam, aspernatur, odit totam ullam debitis. Dicta cupiditate voluptatum assumenda earum nihil.</p>
+        </div>
     </div>
 
-</footer>
-<script src="footer.js"></script> 
 
+<footer>
+        <nav class="navbarFooter">
+            <div class="logoFooter">
+                <div class="row">
+                    <div class="left">
+                        <!-- Image de l'enveloppe qui, au click, ouvre la boîte mail pour envoyer un message -->
+                    <div class="mail">
+                        <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" id="enveloppe"></a>
+                        <div id="contact"><p style="color:black">Contactez-nous</p></div> 
+                    </div>
+                    </div>
+                    <!-- Images des réseaux sociaux qui permettent l'accès aux pages de Cantine Club -->
+                    <div class="reseau">
+                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" class="facebook logo">
+ 
+                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  class="instagram logo">
+ 
+                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" class="tripadvisor logo">
+                    </div>
+                    <!-- Affichage d'un logo et du numéro de téléphone-->
+                    <div class="appel">
+                        <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone"> 
+                        <div id="numTel"><p style="color:black">01 47 84 89 48</p></div> 
+                    </div>
+                    <!-- Affichage des coordonnées du restaurant + marqueur de map clickable vers emplacement Google Map -->
+                    <div class="map">
+                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur"> 
+                        <div id="coordonnees"><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                    </div>
+                    <!-- Affichage d'une image et d'un texte mentions légales -->
+                    <div class="mentions">
+                        <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur"> 
+                        <div id="coordonnees"><p style="color:black">Mentions légales</p></div>
+                    </div>
+            </div>
+            </div>
+            <ul class="linksFooter">
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="footer.js"></script> 
 </html>
+
