@@ -1,0 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(94, 95, 99);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.display {
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    margin-left: 20%;
+}
+
+#CssFB{
+    width: 500px;
+    margin-top: 4%;
+}
+
+#conteneur{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body{
+    background-size: cover;
+    background-image: url(BackgroundActu.JPG);
+}
+
+#eapps-instagram-feed-1{
+    margin-top: 4%;
+}
