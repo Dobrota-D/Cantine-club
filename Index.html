@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--import des feuilles de style-->
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="accueil.css" />
     <link rel="stylesheet" href="footer.css" />
@@ -12,80 +13,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Accueil</title>
 </head>
+<!-- L'en-tête de la page -->
 
 <body>
+    <!--bar de navigation-->
     <header>
         <nav class="navbar">
             <ul class="linksNav">
+                <!--lien de redirection vers les autres pages-->
                 <li class="Acceuil"><a href="Index.html">Accueil</a></li>
                 <li class="Notre"><a href="CarteMenu.html">Notre Carte</a></li>
                 <li class="Presentation"><a href="presentation.html">Présentation</a></li>
                 <li class="ouNousTrouver"><a href="adresses.html">Où nous trouver ?</a></li>
                 <li class="Actualites"><a href="actu.html">Actualités</a></li>
             </ul>
+            <div class="logoNav">
+                <!--logo pour la bar de navigation-->
+                <img src="img/logoNavBar.png">
+            </div>
         </nav>
-        <div class="logo">
+    </header>
+    <!--Contenue de la page-->
+    <div>
+        <!--logo en centre de page-->
+        <div class="logoAccueil">
             <img src="img/logo.png">
         </div>
-    </header>
-
-    <div>
+        <!--vidéo d'arrier plan-->
         <video autoplay muted loop class="accueilvideo">
             <source src="video/videoaccueil.mp4">
         </video>
     </div>
     <div class="textBox">
+        <!--titre de la section-->
         <div class="h1TextBox">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum labore ea quos dignissimos voluptas sunt inventore quidem, iste, voluptate, deserunt consectetur quas omnis facilis harum rem nihil earum aliquam natus.</h1>
+            <h1>Lorem ipsum dolor sit amet consectetur .</h1>
         </div>
+        <!--paragraphe de la section-->
         <div class="pTextBox">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde alias quidem deleniti obcaecati doloribus adipisci odit debitis in, natus vel similique quae nemo voluptate maxime eos sunt soluta quaerat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit illum omnis ea cum consequuntur cumque sunt officia numquam, aspernatur, odit totam ullam debitis. Dicta cupiditate voluptatum assumenda earum nihil.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde alias quidem deleniti obcaecati
+                doloribus adipisci odit debitis in, natus vel similique quae nemo voluptate maxime eos sunt soluta
+                quaerat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit illum omnis ea cum
+                consequuntur cumque sunt officia numquam, aspernatur, odit totam ullam debitis. Dicta cupiditate
+                voluptatum assumenda earum nihil.</p>
         </div>
     </div>
 
-
-<footer>
+    <!--Section d'information plus réseaux et mention légale et nous contacter-->
+    <footer>
         <nav class="navbarFooter">
             <div class="logoFooter">
                 <div class="row">
                     <div class="left">
                         <!-- Image de l'enveloppe qui, au click, ouvre la boîte mail pour envoyer un message -->
-                    <div class="mail">
-                        <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" id="enveloppe"></a>
-                        <div id="contact"><p style="color:black">Contactez-nous</p></div> 
-                    </div>
+                        <div class="mail">
+                            <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png"
+                                    id="enveloppe"></a>
+                            <div id="contact">
+                                <p style="color:black">Contactez-nous</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- Images des réseaux sociaux qui permettent l'accès aux pages de Cantine Club -->
                     <div class="reseau">
-                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" class="facebook logo">
- 
-                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  class="instagram logo">
- 
-                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" class="tripadvisor logo">
+                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();"
+                            class="facebook logo">
+
+                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"
+                            class="instagram logo">
+
+                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();"
+                            class="tripadvisor logo">
                     </div>
                     <!-- Affichage d'un logo et du numéro de téléphone-->
                     <div class="appel">
-                        <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone"> 
-                        <div id="numTel"><p style="color:black">01 47 84 89 48</p></div> 
+                        <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone">
+                        <div id="numTel">
+                            <p style="color:black">01 47 84 89 48</p>
+                        </div>
                     </div>
                     <!-- Affichage des coordonnées du restaurant + marqueur de map clickable vers emplacement Google Map -->
                     <div class="map">
-                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur"> 
-                        <div id="coordonnees"><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur">
+                        <div id="coordonnees">
+                            <p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p>
+                        </div>
                     </div>
                     <!-- Affichage d'une image et d'un texte mentions légales -->
                     <div class="mentions">
-                        <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur"> 
-                        <div id="coordonnees"><p style="color:black">Mentions légales</p></div>
+                        <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur">
+                        <div id="coordonnees">
+                            <p style="color:black">Mentions légales</p>
+                        </div>
                     </div>
-            </div>
+                </div>
             </div>
             <ul class="linksFooter">
             </ul>
         </nav>
     </footer>
 </body>
-<script src="footer.js"></script> 
-</html>
+<!--implementation du script pour le footer-->
+<script src="footer.js"></script>
 
+</html>

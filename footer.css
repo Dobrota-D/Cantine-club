@@ -1,40 +1,35 @@
-* {
-    box-sizing: border-box;
-}
-
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 
-.navbarFooter{
-    display: flex;
-    flex-direction: row-reverse;
+.navbarFooter {
+    display: block;
     background-color: rgb(196, 194, 194);
     background-size: 100%;
     height: 117px;
     margin-bottom: -10%;
 }
 
-.linksFooter{
-    font-family: 'Permanent Marker',sans-serif;
+.linksFooter {
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 20px;
     list-style: none;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
 
 }
 
-li{
+li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    float:left;
+    float: left;
 }
 
-.links li a{
+.links li a {
     text-decoration: none;
     display: flex;
     padding: 1.5rem;
@@ -55,7 +50,7 @@ li{
 }
 
 #enveloppe {
-    width: 16%;
+    width: 14%;
     height: 55%;
     margin-top: 2%;
     display: flex;
@@ -63,12 +58,13 @@ li{
 }
 
 #contact {
-    margin-top: -5%;
+    margin-top: -4%;
     margin-left: -2%;
 }
 
 .reseau {
     margin-left: -15%;
+    display: flex;
 }
 
 .facebook {
@@ -101,7 +97,7 @@ li{
 
 #numTel {
     margin-left: -25%;
-    margin-top: -10%;
+    margin-top: -4%;
 }
 
 #marqueur {
@@ -116,7 +112,7 @@ li{
 }
 
 #coordonnees {
-    margin-top: -10%;
+    margin-top: -4%;
 }
 
 .mentions {

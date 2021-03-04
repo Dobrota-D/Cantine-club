@@ -1,40 +1,38 @@
-
-
-.navbar{
+/*arrier plan de la bar de navigation*/
+.navbar {
     display: flex;
     flex-direction: row-reverse;
     background-color: black;
     height: 80px;
     box-shadow: 0px 0px 100px black;
 }
-
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-.linksNav{
-    font-family: 'Permanent Marker',sans-serif;
+/*changement de la font et de la taille et espacement entre les titre*/
+.linksNav {
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 15px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-li{
+/*placement des liens*/
+li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    float:left;
+    float: left;
 }
-
-.linksNav li a{
+/*désactivation des puces de la liste des liens et couleur de la font*/
+.linksNav li a {
     text-decoration: none;
     display: flex;
     padding: 1.5rem;
     color: white;
 }
+/*placement du logo*/
+.logoNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 
-
-
+}

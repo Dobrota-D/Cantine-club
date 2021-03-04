@@ -1,58 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!-- Les méta-données du site web-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="presentation.css">
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Qui sommes nous ?</title>
 </head>
-<!-- L'en-tête de la page -->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-
-        </div>
-        <ul class="linksNav">
-            <li class="Accueil"><a href="Index.html">Accueil</a></li>
-            <li class="Notre"><a href="CarteMenu.html">Notre Carte</a></li>
-            <li class="Presentation"><a href="presentation.html">Présentation</a></li>
-            <li class="ouNousTrouver"><a href="adresses.html">Où nous trouver ?</a></li>
-            <li class="Actualites"><a href="actu.html">Actualités</a></li>
-        </ul>
-    </nav>
-</header>
 <!--Le corps de la page-->
+
 <body>
+    <!-- L'en-tête de la page -->
+    <header>
+        <nav class="navbar">
+            <ul class="linksNav">
+                <li class="Acceuil"><a href="Index.html">Accueil</a></li>
+                <li class="Notre"><a href="CarteMenu.html">Notre Carte</a></li>
+                <li class="Presentation"><a href="presentation.html">Présentation</a></li>
+                <li class="ouNousTrouver"><a href="adresses.html">Où nous trouver ?</a></li>
+                <li class="Actualites"><a href="actu.html">Actualités</a></li>
+            </ul>
+            <div class="logoNav">
+                <img src="img/logoNavBar.png">
+            </div>
+        </nav>
+    </header>
+
     <div class="page">
         <!-- Le titre de la page -->
         <h2>Qui sommes nous ?</h2>
         <div class="ligne_1">
-           
-        <!-- Les paragraphes pour chaque section -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia aliquam voluptate reprehenderit recusandae quasi, autem, vero tenetur iure nostrum ea animi consequatur sequi perferendis? Quos aliquam voluptates amet dolor.</p>
-        <img src="img/facade2.jpg">
+
+            <!-- Les paragraphes pour chaque section -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia aliquam voluptate reprehenderit
+                recusandae quasi, autem, vero tenetur iure nostrum ea animi consequatur sequi perferendis? Quos aliquam
+                voluptates amet dolor.</p>
+            <img class="imgPres" src="img/facade2.jpg">
+        </div>
+
+        <div class="ligne_2">
+            <img class="imgPres" src="img/facade2.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum libero in molestias vel quis ut
+                reprehenderit aspernatur provident eum ratione natus quibusdam odit accusamus porro, iusto maxime eos.
+                Explicabo.</p>
+        </div>
+
+        <div class="ligne_3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis perferendis expedita iusto esse.
+                Voluptatum similique delectus culpa tempore sequi voluptate rerum est, cumque eveniet eligendi, optio et
+                dolores assumenda obcaecati?</p>
+            <img class="imgPres" src="img/produit.jpg">
+        </div>
+
+        <div class="ligne_4">
+            <img class="imgPres" src="img/produit.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque, aliquid aperiam dolor natus tempore
+                voluptatem reiciendis aliquam illo repudiandae. Quis ratione non labore tempore id iusto dolor
+                dignissimos nulla.</p>
+        </div>
     </div>
 
-    <div class="ligne_2">
-        <img src="img/facade2.jpg">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum libero in molestias vel quis ut reprehenderit aspernatur provident eum ratione natus quibusdam odit accusamus porro, iusto maxime eos. Explicabo.</p>
-    </div>
+    <footer>
+        <nav class="navbarFooter">
+            <div class="logoFooter">
+                <div class="row">
+                    <div class="left">
+                        <!-- Image de l'enveloppe qui, au click, ouvre la boîte mail pour envoyer un message -->
+                        <div class="mail">
+                            <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png"
+                                    id="enveloppe"></a>
+                            <div id="contact">
+                                <p style="color:black">Contactez-nous</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Images des réseaux sociaux qui permettent l'accès aux pages de Cantine Club -->
+                    <div class="reseau">
+                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();"
+                            class="facebook logo">
 
-    <div class="ligne_3">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis perferendis expedita iusto esse. Voluptatum similique delectus culpa tempore sequi voluptate rerum est, cumque eveniet eligendi, optio et dolores assumenda obcaecati?</p>
-        <img src="img/produit.jpg">
-    </div>
+                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"
+                            class="instagram logo">
 
-    <div class="ligne_4">
-        <img src="img/produit.jpg">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque, aliquid aperiam dolor natus tempore voluptatem reiciendis aliquam illo repudiandae. Quis ratione non labore tempore id iusto dolor dignissimos nulla.</p>
-    </div>
-</div>
+                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();"
+                            class="tripadvisor logo">
+                    </div>
+                    <!-- Affichage d'un logo et du numéro de téléphone-->
+                    <div class="appel">
+                        <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone">
+                        <div id="numTel">
+                            <p style="color:black">01 47 84 89 48</p>
+                        </div>
+                    </div>
+                    <!-- Affichage des coordonnées du restaurant + marqueur de map clickable vers emplacement Google Map -->
+                    <div class="map">
+                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur">
+                        <div id="coordonnees">
+                            <p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p>
+                        </div>
+                    </div>
+                    <!-- Affichage d'une image et d'un texte mentions légales -->
+                    <div class="mentions">
+                        <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur">
+                        <div id="coordonnees">
+                            <p style="color:black">Mentions légales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="linksFooter">
+            </ul>
+        </nav>
+    </footer>
 
 </body>
+<script src="footer.js"></script>
+
 </html>

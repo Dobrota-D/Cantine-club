@@ -1,33 +1,43 @@
-* {
-  box-sizing: border-box;
-}
-
-body{
+/*blocage du scroll horizontal*/
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
-
+/*placement de la vidéo en arriere plan*/
 video {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
-
-.textBox{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 100px;
-    margin-top: 40rem;
+/*placement de la section en dessous de la vidéo*/
+.textBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 100px;
+  margin-top: 20%;
 }
-
-.pTextBox{
-font-size: 18px;
+/*changemet de taille de la police*/
+.pTextBox {
+  font-size: 18px;
 }
-
-.h1TextBox{
-padding-bottom: 50px;
-font-family: "Permanent Marker", sans-serif;
+/*placement et changement de la font*/
+.h1TextBox {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  font-family: "Permanent Marker", sans-serif;
+}
+/*placement du logo*/
+.logoAccueil {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
 }
