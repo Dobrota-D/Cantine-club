@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!-- Les méta-données du site web-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Qui sommes nous ?</title>
 </head>
-
+<!-- L'en-tête de la page -->
 <header>
     <nav class="navbar">
         <div class="logo">
@@ -28,23 +28,14 @@
         </ul>
     </nav>
 </header>
-
+<!--Le corps de la page-->
 <body>
     <div class="page">
+        <!-- Le titre de la page -->
         <h2>Qui sommes nous ?</h2>
         <div class="ligne_1">
-           <!-- <section>
-                <div class="lettres">
-                    <p>E</p>
-                    <p>T</p>
-                    <p>I</p>
-                    <p>L</p>
-                    <p>A</p>
-                    <p>U</p>
-                    <p>Q</p>
-                </div>
-            </section>-->
-
+           
+        <!-- Les paragraphes pour chaque section -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia aliquam voluptate reprehenderit recusandae quasi, autem, vero tenetur iure nostrum ea animi consequatur sequi perferendis? Quos aliquam voluptates amet dolor.</p>
         <img src="img/facade2.jpg">
     </div>
@@ -67,41 +58,44 @@
 
 </body>
 <footer>
-
-    <div class="box" id="box">
-
-            <div class="footer"> 
-                
+    <nav class="navbarFooter">
+        <div class="logoFooter">
+            <div class="row">
                 <div class="left">
-                        <div class="row">
-                                <div class="mail">
-                                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" width="100px" class="logo"></a>
-                                    <div class="contact"><p style="color:black">Nous contacter</p></div>
-                                    <div class="mentions" onclick="toMentions();"><p style="color:black">Mentions légales</p></div>
-                                </div>
-                                <div>
-                                <div class="row">
-                                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" height="60px" width="70px" class="logo reseau espace">
-
-                                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  height="60px" width="90px" class="reseau">
-
-                                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" height="60px" width="70px" class="reseau">
-                                </div>
-                                <div class="row tel">
-                                <img alt="téléphone" src="images/tel_icone.png" width="50px" height="50px" > 
-                                <div id="numTel"><p style="color:black">01 47 84 89 48</p></div>  
-                                </div>
-                        </div>   
-
-                                <div class="map">
-                                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" width="60px" height="60px" id="marqueur"> 
-                                        <div><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
-                                </div>
-                         </div>
+                    <!-- Image de l'enveloppe qui, au click, ouvre la boîte mail pour envoyer un message -->
+                <div class="mail">
+                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" id="enveloppe"></a>
+                    <div id="contact"><p style="color:black">Contactez-nous</p></div> 
                 </div>
-            </div>
-    </div>
+                </div>
+                <!-- Images des réseaux sociaux qui permettent l'accès aux pages de Cantine Club -->
+                <div class="reseau">
+                    <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" class="facebook logo">
 
+                    <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  class="instagram logo">
+
+                    <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" class="tripadvisor logo">
+                </div>
+                <!-- Affichage d'un logo et du numéro de téléphone-->
+                <div class="appel">
+                    <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone"> 
+                    <div id="numTel"><p style="color:black">01 47 84 89 48</p></div> 
+                </div>
+                <!-- Affichage des coordonnées du restaurant + marqueur de map clickable vers emplacement Google Map -->
+                <div class="map">
+                    <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur"> 
+                    <div id="coordonnees"><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                </div>
+                <!-- Affichage d'une image et d'un texte mentions légales -->
+                <div class="mentions">
+                    <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur"> 
+                    <div id="coordonnees"><p style="color:black">Mentions légales</p></div>
+                </div>
+        </div>
+        </div>
+        <ul class="linksFooter">
+        </ul>
+    </nav>
+    <script src="footer.js"></script>
 </footer>
-<script src="footer.js"></script> 
 </html>
