@@ -1,10 +1,15 @@
+body{
+    background-size: cover;
+    background-image: url(ImageCarteMenu/Background.jpg);
+}
+
 #ProduitEnVente{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;  
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #DescriptionProduit{
@@ -75,8 +80,18 @@
 }
 
 legend{
-    font-size: 1.20em;
+    border: solid;
+    border-radius: 40px;
+    height: 70px;
+    width: 500px;
+    font-size: 1.4em;
     text-align: left;
     margin-left: 30px;
     font-family: cursive;
+    background-color: rgb(205, 205, 205);;
+}
+
+#TitreLegend{
+    margin-top: 0.1%;
+    text-align: center;
 }
