@@ -12,87 +12,61 @@
     <title>Addresses</title>
 </head>
 
-<header class="adresses-header">
-    <nav class="navbar">
-        <div class="logo">
-
-        </div>
-        <ul class="links">
-            <li class="Accueil"><a href="Index.html">Accueil</a></li>
-            <li class="NotreCarte"><a href="CarteMenu.html">Notre Carte</a></li>
-            <li class="Presentation"><a href="presentation.html">Présentation</a></li>
-            <li class="ouNousTrouver"><a href="adresses.html">Où nous trouver ?</a></li>
-            <li class="Actualites"><a href="#">Actualités</a></li>
-        </ul>
-    </nav>
-</header>
-
-
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+
+            </div>
+            <ul class="links">
+                <li class="Acceuil"><a href="#">Accueil</a></li>
+                <li class="Notre"><a href="CarteMenu.html">Notre Carte</a></li>
+                <li class="Presentation"><a href="presentation.html">Présentation</a></li>
+                <li class="ouNousTrouver"><a href="adresses.html">Où nous trouver ?</a></li>
+                <li class="Actualites"><a href="#">Actualités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <div class="page">
-        <div class="adresses-h2">
-            <p class="adresses-texte">Trouvez le restaurant le plus proche de chez vous</p>
-        </div>
-
-        <div class="container">
-            <img class="img" src="img/lesvallees.jpg" alt="Image du restaurant">
-            <p>47 Rue Felix Faure, 92700 Colombes<br>
-                <br>
-                lundi Fermé<br>
-                mardi Fermé<br>
-                mercredi 12:00–14:00<br>
-                jeudi 12:00–14:00<br>
-                vendredi 12:00–14:00<br>
-                samedi 12:00–14:00<br>
-                dimanche Fermé</p>
+        <div class="banner">
 
         </div>
 
-        <div class="container-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.037605303318!2d2.255346415626405!3d48.91467577929294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66562c2cf61b3%3A0x1231560330b6bd42!2sCANTINE%20CLUB%20Les%20Vall%C3%A9es!5e0!3m2!1sfr!2sfr!4v1614682523674!5m2!1sfr!2sfr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="parentcontainer1">
+            <div class="mapcontainer1">
+                <p class="title">ACCÈS</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10488.15041686591!2d2.2575351!3d48.9146758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1231560330b6bd42!2sCANTINE%20CLUB%20Les%20Vall%C3%A9es!5e0!3m2!1sfr!2sfr!4v1614851507468!5m2!1sfr!2sfr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+        <div class="textcontainer1">
+            <p class="title">CONTACT</p>
+            <p class="adresse">ADRESSE :</p>
+            <p class="tctext">
+                47 Rue Felix Faure<br> 
+                92700 Colombes</p>
+            
+            <p class="horaires">HORAIRES :</p>
+            <p class="tctext"> 
+                Lundi : Fermé<br>
+                Mardi : Fermé<br>           
+                Mercredi : 12h - 14h<br>
+                Jeudi : 12h - 14h<br>
+                Vendredi : 12h - 14h<br>
+                Samedi : 12-14h<br>
+                Dimanche : Fermé<br>
+            </p>
+            </div>
         </div>
 
     </div>
+
+
 
 </body>
-<footer>
 
-    <div class="box" id="box">
-
-            <div class="footer"> 
-                
-                <div class="left">
-                        <div class="row">
-                                <div class="mail">
-                                    <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" width="100px" class="logo"></a>
-                                    <div class="contact"><p style="color:black">Nous contacter</p></div>
-                                    <div class="mentions" onclick="toMentions();"><p style="color:black">Mentions légales</p></div>
-                                </div>
-                                <div>
-                                <div class="row">
-                                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" height="60px" width="70px" class="logo reseau espace">
-
-                                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  height="60px" width="90px" class="reseau">
-
-                                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" height="60px" width="70px" class="reseau">
-                                </div>
-                                <div class="row tel">
-                                <img alt="téléphone" src="images/tel_icone.png" width="50px" height="50px" > 
-                                <div id="numTel"><p style="color:black">01 47 84 89 48</p></div>  
-                                </div>
-                        </div>   
-
-                                <div class="map">
-                                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" width="60px" height="60px" id="marqueur"> 
-                                        <div><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
-                                </div>
-                         </div>
-                </div>
-            </div>
-    </div>
-
-</footer>
-<script src="footer.js"></script> 
 </html>
