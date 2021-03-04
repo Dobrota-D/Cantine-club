@@ -32,10 +32,6 @@
 
 
     <div class="page">
-        <div class="banner">
-
-        </div>
-
         <div class="parentcontainer1">
             <div class="mapcontainer1">
                 <p class="title">ACCÈS</p>
@@ -45,7 +41,7 @@
                 </div>
 
         <div class="textcontainer1">
-            <p class="title">CONTACT</p>
+            <p class="contact">CONTACT</p>
             <p class="adresse">ADRESSE :</p>
             <p class="tctext">
                 47 Rue Felix Faure<br> 
@@ -58,7 +54,7 @@
                 Mercredi : 12h - 14h<br>
                 Jeudi : 12h - 14h<br>
                 Vendredi : 12h - 14h<br>
-                Samedi : 12-14h<br>
+                Samedi : 12 - 14h<br>
                 Dimanche : Fermé<br>
             </p>
             </div>
@@ -66,7 +62,48 @@
 
     </div>
 
+    <footer>
+        <nav class="navbarFooter">
+            <div class="logoFooter">
+                <div class="row">
+                    <div class="left">
+                        <!-- Image de l'enveloppe qui, au click, ouvre la boîte mail pour envoyer un message -->
+                    <div class="mail">
+                        <a href="mailto:cantineclublesvallees@gmail.com"><img src="images/mail.png" id="enveloppe"></a>
+                        <div id="contact"><p style="color:black">Contactez-nous</p></div> 
+                    </div>
+                    </div>
+                    <!-- Images des réseaux sociaux qui permettent l'accès aux pages de Cantine Club -->
+                    <div class="reseau">
+                        <img alt="facebook" src="images/facebook_logo.jpg" onclick="toFacebook();" class="facebook logo">
+    
+                        <img alt="instagram" src="images/insta_logo.png" onclick="toInstagram();"  class="instagram logo">
+    
+                        <img alt="tripadvisor" src="images/trip_logo.png" onclick="toTripadvisor();" class="tripadvisor logo">
+                    </div>
+                    <!-- Affichage d'un logo et du numéro de téléphone-->
+                    <div class="appel">
+                        <img alt="téléphone" src="images/tel_icone.png" class="logo" id="telephone"> 
+                        <div id="numTel"><p style="color:black">01 47 84 89 48</p></div> 
+                    </div>
+                    <!-- Affichage des coordonnées du restaurant + marqueur de map clickable vers emplacement Google Map -->
+                    <div class="map">
+                        <img onclick="toMap();" alt="adresse" src="images/adresse.png" class="logo" id="marqueur"> 
+                        <div id="coordonnees"><p style="color:black">47 rue Félix Faure <br> 92700 Colombes</p></div>
+                    </div>
+                    <!-- Affichage d'une image et d'un texte mentions légales -->
+                    <div class="mentions">
+                        <img onclick="toMap();" alt="adresse" src="images/papier.png" class="logo" id="marqueur"> 
+                        <div id="coordonnees"><p style="color:black">Mentions légales</p></div>
+                    </div>
+            </div>
+            </div>
+            <ul class="linksFooter">
+            </ul>
+        </nav>
+    </footer>
 
+    <script src="footer.js"></script> 
 
 </body>
 

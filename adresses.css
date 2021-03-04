@@ -36,10 +36,17 @@ body {
 }
 
 .title {
-  margin-left: 160px;
+  margin-top: 110px;
+  font-size: 40px ;
+  color: white;
+  text-align: center;
+}
+
+.contact {
   margin-top: 100px;
   font-size: 40px ;
   color: white;
+  text-align: center;
 }
 
 .mapcontainer1 iframe{
@@ -53,30 +60,30 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: black;
+  background-color: rgb(11, 59, 23);
   height: 650px;
 }
 
 .adresse {
-  color: orange;
-  margin-left: 160px;
-  margin-top: 60px;
+  color: yellow;
+  margin-top: 70px;
   font-size: 20px;
+  text-align: center;
 }
 
 .tctext {
   font-size: auto;
   color: white;
-  margin-left: 160px;
   margin-top: 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 .horaires {
-  color: orange;
+  color: yellow;
   margin-top: 30px;
-  margin-left: 160px;
   font-size: 20px;
+  text-align: center;
 }
 
 
