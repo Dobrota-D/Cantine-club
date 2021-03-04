@@ -12,7 +12,12 @@ body {
     margin-right: 1em;
 }
 
-#DescriptionProduit {
+#TTC{
+    text-align: right;
+    margin-top: 0%;
+    margin-right: 3%;
+}
+#DescriptionProduit{
     margin-top: 1.2rem;
     width: 275px;
     height: 50px;
