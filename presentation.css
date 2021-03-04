@@ -1,10 +1,20 @@
-body {
-    background-color: rgb(102, 2, 2);
+* {
+    box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
 h2 {
+    background-color: rgb(102, 2, 2);
     text-align: center;
     font-family: 'Helvetica',sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
 }
 
 img {
@@ -20,7 +30,7 @@ section {
 
 .ligne_1 {
     display: flex;
-    background-color: darkred;
+    background-color: rgb(102, 2, 2);
     color: white;
     font-family: 'Helvetica',sans-serif;
 }
@@ -77,3 +87,5 @@ section {
     text-align: center;
     padding: 4%;
 }
+
+
