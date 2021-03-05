@@ -1,8 +1,9 @@
+/* Image de fond */
 body {
     background-size: cover;
     background-image: url(ImageCarteMenu/Background.jpg);
 }
-
+/* Placement des différent produit*/
 #ProduitEnVente {
     display: flex;
     flex-direction: row;
@@ -11,12 +12,13 @@ body {
     margin-left: 1em;
     margin-right: 1em;
 }
-
+/* Placement du prix*/
 #TTC{
     text-align: right;
     margin-top: 0%;
     margin-right: 3%;
 }
+/* Texte de description*/
 #DescriptionProduit{
     margin-top: 1.2rem;
     width: 275px;
@@ -24,45 +26,45 @@ body {
     text-align: center;
     font-size: 0.95em;
 }
-
+/* Marge pour eviter que les produits soit collés*/
 #Produit {
     margin-right: 1.5em;
     margin-left: 1.5em;
 }
-
+/* Placement de l'image, de la description et du titre*/
 #ApercuProduit {
     text-align: center;
     margin-right: 3.5%;
     margin-left: 3.5%;
 }
-
+/* Afficher le titre des plats StreetFood en rouge*/
 #StreetFood {
     color: rgb(186, 32, 32);
     margin: 2%;
 }
-
+/* Afficher le titre des plats Cantoche VGé en vert*/
 #CantocheVGé {
     color: green;
     margin: 2%;
 }
-
+/* Afficher le titre des desserts en orange*/
 #NosDesserts {
     color: rgb(234, 140, 33);
     margin: 2%;
 }
-
+/* marge pour aérer les blocs fieldset*/
 #marge {
     margin-left: 10%;
     margin-right: 10%;
     border: 4px solid;
     border-radius: 20px;
 }
-
+/* mettre la description des produits en italique*/
 #DescriptionProduit {
 
     font-style: italic;
 }
-
+/* afficher le prix sous le produit*/
 #PrixProduit {
     font-size: 1.4rem;
     margin-right: 1em;
@@ -71,17 +73,17 @@ body {
     margin-top: 13%;
     margin-bottom: 10%;
 }
-
+/* afficher le nom du produit*/
 #NomProduit {
     text-align: center;
     font-size: 1.3em;
     margin-top: 3%;
 }
-
+/* modifier la taille des images de produit*/
 #ImageProduit {
     max-width: 200px;
 }
-
+/* styliser les titre de section*/
 legend {
     border: solid;
     border-radius: 30px;
@@ -94,12 +96,12 @@ legend {
     background-color: rgb(205, 205, 205);
     ;
 }
-
+/* centrer les titres de section*/
 #TitreLegend {
     margin-top: 0.1%;
     text-align: center;
 }
-
+/* Afficher le titre des Boissons en bleu*/
 #NosBoissons {
     color: rgb(60, 149, 203);
     margin: 2%;
