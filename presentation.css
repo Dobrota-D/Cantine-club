@@ -12,12 +12,6 @@ h2 {
     height: 355px;
 }
 
-section {
-    display: block;
-    z-index: 1;
-    font-size: 1.5rem;
-}
-
 .ligne_1 {
     display: flex;
     background-color: rgb(102, 2, 2);
@@ -31,13 +25,7 @@ section {
     padding: 4%;
 }
 
-.ligne_1 section p {
-    transform: rotate(270deg);
-    font-size: 2rem;
-    opacity: 0.4;
-    font-family: 'Helvetica';
-    align-items: center;
-}
+
 
 .ligne_2 {
     display: flex;
